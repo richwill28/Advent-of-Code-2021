@@ -1,16 +1,16 @@
 def part_one():
     counter = 0
-    with open("input.txt") as file:
+    with open("../input.txt") as file:
         lines = file.readlines()
         measurements = [int(line) for line in lines]
         for i in range(1, len(measurements)):
             if (measurements[i] > measurements[i - 1]):
                 counter += 1
-    print(f"{counter}")
+    print(counter)
 
 def part_two():
     counter = 0
-    with open("input.txt") as file:
+    with open("../input.txt") as file:
         lines = file.readlines()
         measurements = [int(line) for line in lines]
         for i in range(0, len(measurements) - 3):
@@ -18,7 +18,7 @@ def part_two():
             second_window = measurements[i + 1] + measurements[i + 2] + measurements[i + 3]
             if (second_window > first_window):
                 counter += 1
-    print(f"{counter}")
+    print(counter)
 
 if __name__ == "__main__":
     part_one()
