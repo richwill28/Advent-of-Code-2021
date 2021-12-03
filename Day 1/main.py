@@ -1,4 +1,4 @@
-def part1():
+def part_one():
     counter = 0
     with open("input.txt") as file:
         lines = file.readlines()
@@ -8,7 +8,7 @@ def part1():
                 counter += 1
     print(f"{counter}")
 
-def part2():
+def part_two():
     counter = 0
     with open("input.txt") as file:
         lines = file.readlines()
@@ -21,5 +21,5 @@ def part2():
     print(f"{counter}")
 
 if __name__ == "__main__":
-    part1()
-    part2()
+    part_one()
+    part_two()
