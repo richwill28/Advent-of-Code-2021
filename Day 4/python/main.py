@@ -32,6 +32,7 @@ class Board:
                 self.numbers[i][j] = board[i][j]
 
     def set_bingo(self):
+        # check horizontals
         for i in range(0, 5):
             counter = 0
             for j in range(0, 5):
@@ -43,6 +44,7 @@ class Board:
                 self.bingo = True
                 return
 
+        # check verticals
         for j in range(0, 5):
             counter = 0
             for i in range(0, 5):
